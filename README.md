@@ -90,7 +90,7 @@ cd AWS_AI_Agent_Amazon-_Sage_Maker
 ## 4. Set your Serper API key
 ```python
 def search_serper(query):
-    SERPER_API_KEY = "your_API_key"  # meke sure to put your key here
+    SERPER_API_KEY = "your_API_key"  # create one and add it here
     url = "https://google.serper.dev/search"
     headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
 ```
