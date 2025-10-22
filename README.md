@@ -82,7 +82,7 @@ We realized how difficult it is to find **reliable information tailored to oneâ€
 ## Get Started 
 ### clone repo
 ```bash
-git clone [https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
+git clone https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
 cd AWS_AI_Agent_Amazon-_Sage_Maker
 ```
 
