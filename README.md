@@ -1,5 +1,5 @@
 # AWS_AI_Agent_Amazon-_Sage_Maker
-# LexiAgent — AI Legal Assistant for France  
+# LexiAgent — AI Agent for legal information
 ### AWS AI Agent Hackathon 2025  
 
  **Empowering access to legal and administrative information through AI.**
@@ -51,4 +51,24 @@ We realized how difficult it is to find **reliable information tailored to one�
 ---
 
 ##  Architecture Diagram
+
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer | Technology | Description |
+|-------|-------------|-------------|
+| **LLM** | 🧠 [Mistral Small](https://aws.amazon.com/bedrock/) (via Amazon Bedrock) | Generates and understands text |
+| **Embeddings** | 🔢 [Amazon Titan Embeddings](https://aws.amazon.com/bedrock/titan/) | Converts legal documents into vector representations |
+| **Vector Store** | 🧮 [FAISS](https://github.com/facebookresearch/faiss) | Enables semantic similarity search |
+| **Framework** | 🔗 [LangChain](https://www.langchain.com/) | Orchestrates the RAG pipeline and agent tools |
+| **Data Source** | 📄 PDFs stored in [AWS S3](https://aws.amazon.com/s3/) | Legal texts (Code du travail, circulaires, etc.) |
+| **Web Search** | 🌐 [Serper API](https://serper.dev/) | Fetches official references (Légifrance, Service-Public) |
+| **Memory** | 🧩 `ConversationBufferMemory` | Maintains chat context and continuity |
+| **Environment** | ☁️ [AWS Bedrock Runtime](https://aws.amazon.com/bedrock/) | Executes LLM inference securely |
+| **Language** | 🇫🇷 French (extendable to multilingual) | Focused on French administrative/legal use cases |
+| **Dev Tools** | 🐍 Python 3.10+, [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) | Core development environment |
+
+
 
