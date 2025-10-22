@@ -7,9 +7,13 @@
 ---
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![AWS](https://img.shields.io/badge/AWS-Bedrock-orange)
+![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock-orange)
+![AWS SageMaker S3](https://img.shields.io/badge/SageMaker--S3-ff69b4)  
 ![LangChain](https://img.shields.io/badge/LangChain-0.2+-green)
+![LLM](https://img.shields.io/badge/LLM-Mistral%20Small-lightblue)
+![Agent](https://img.shields.io/badge/Agent-Yes-yellow)
 ![Status](https://img.shields.io/badge/Project-Hackathon%202025-beta)
+
 
 ---
 
