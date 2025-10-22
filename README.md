@@ -125,15 +125,13 @@ or you can use the function :   os.getenv()
 ### 6. Deployment
 
 To deploy your model to SageMaker, run:
-
+```python
 python deployement.py
-
+```
 
 If successful, the terminal will display the name of your deployed endpoint.
 You can also verify its status in the AWS SageMaker Console → Endpoints section.
 
-
-```
 ## 5. Run
 
 ---
