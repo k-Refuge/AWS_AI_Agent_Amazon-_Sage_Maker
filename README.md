@@ -114,8 +114,8 @@ You can help for example by:
 
 Submit a Pull Request or open an Issue to share your ideas.
 
-## What still doesn'te work
-**InvokEndpoint Error** (We appreciate your 
+## What still doesn't work correctly
+**InvokEndpoint Error** 
 We can call a model in 
 We try to deploy it with SageMaker. We got a successful output on terminal. However, when we try to call the endpoint, we have a runtime error as you can see below: 
 <img width="1231" height="157" alt="image" src="https://github.com/user-attachments/assets/f61d9b6a-48b4-4f63-a70b-9d9beec7f47c" />
