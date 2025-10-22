@@ -64,6 +64,7 @@ We realized how difficult it is to find **reliable information tailored to one�
 
 | Layer | Technology | Description |
 |-------|-------------|-------------|
+| **Agent Layer** | 🤖 [LangChain Agent](https://python.langchain.com/docs/modules/agents/) (Zero-Shot ReAct) | Core reasoning component that decides which tool to call (RAG or web search) |
 | **LLM** | 🧠 [Mistral Small](https://aws.amazon.com/bedrock/) (via Amazon Bedrock) | Generates and understands text |
 | **Embeddings** | 🔢 [Amazon Titan Embeddings](https://aws.amazon.com/bedrock/titan/) | Converts legal documents into vector representations |
 | **Vector Store** | 🧮 [FAISS](https://github.com/facebookresearch/faiss) | Enables semantic similarity search |
@@ -83,8 +84,22 @@ We realized how difficult it is to find **reliable information tailored to one�
 ```bash
 git clone [https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
 cd AWS_AI_Agent_Amazon-_Sage_Maker
+```` ``` ````
 
---- 
+
+---
+## Contribution
+We’re open to all contributions and ideas! 🙌
+
+You can help by:
+Suggesting better LLMs or embeddings models
+Expanding the legal corpus
+
+Translating the system into other languages
+
+Improving performance or UX
+
+📬 Submit a Pull Request or open an Issue to share your ideas.
 
 
 
