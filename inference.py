@@ -40,16 +40,17 @@ rag_chat = ConversationalRetrievalChain.from_llm(
 
 # --- The main function called by SageMaker ---
 def predict_fn(input_data, model=None):
-    """S'exécute à chaque requête API"""
+    """Executed on every API request"""
     question = input_data["question"]
     response = rag_chat.run(question)
     return {"answer": response}
 
 def input_fn(request_body, content_type):
-    """Convertit la requête HTTP en JSON"""
+    """Converts the HTTP request into JSON"""
     return json.loads(request_body)
 
 def output_fn(prediction, accept):
-    """Retourne la réponse HTTP"""
+    """Return the HTTP response"""
     return json.dumps(prediction)
+
 
