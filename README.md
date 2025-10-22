@@ -90,7 +90,7 @@ cd AWS_AI_Agent_Amazon-_Sage_Maker
 ## Contribution
 We’re open to all contributions and ideas! 🙌
 
-You can help by:
+You can help by for example:
 - Suggesting better LLMs or embeddings models
 - Expanding the legal corpus
 - Translating the system into other languages
