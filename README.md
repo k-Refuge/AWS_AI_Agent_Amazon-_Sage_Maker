@@ -80,18 +80,22 @@ We realized how difficult it is to find **reliable information tailored to one�
 
 --- 
 ## Get Started 
-### Clone repository
+### 1. Clone repository
 ```bash
 git clone https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
 cd AWS_AI_Agent_Amazon-_Sage_Maker
 ```
-## Set your Serper API key 
+## 2. Create an IAM account on AWS
+## 3.
+## 4. Set your Serper API key
 ```python
 def search_serper(query):
-    SERPER_API_KEY = "your_API_key"  # Assure-toi qu'il est défini dans ton environnement SageMaker
+    SERPER_API_KEY = "your_API_key"  # meke sure to put your key here
     url = "https://google.serper.dev/search"
     headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
 ```
+## 5. Run
+
 ---
 ## Contribution
 We’re open to all contributions and ideas! 🙌
