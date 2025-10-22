@@ -84,22 +84,19 @@ We realized how difficult it is to find **reliable information tailored to one�
 ```bash
 git clone [https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
 cd AWS_AI_Agent_Amazon-_Sage_Maker
-```` ``` ````
-
+```
 
 ---
 ## Contribution
 We’re open to all contributions and ideas! 🙌
 
 You can help by:
-Suggesting better LLMs or embeddings models
-Expanding the legal corpus
+- Suggesting better LLMs or embeddings models
+- Expanding the legal corpus
+- Translating the system into other languages
+- Improving performance or UX
 
-Translating the system into other languages
-
-Improving performance or UX
-
-📬 Submit a Pull Request or open an Issue to share your ideas.
+Submit a Pull Request or open an Issue to share your ideas.
 
 
 
