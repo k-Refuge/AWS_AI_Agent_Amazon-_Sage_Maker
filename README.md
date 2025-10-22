@@ -88,6 +88,7 @@ cd AWS_AI_Agent_Amazon-_Sage_Maker
 ## 2. Create an IAM account on AWS
 ## 3.
 ## 4. Set your Serper API key
+In the file : " " , the section called "Agent", you will find the function search_serper. After creating an API Key from serper, you should update it:
 ```python
 def search_serper(query):
     SERPER_API_KEY = "your_API_key"  # create one and add it here
