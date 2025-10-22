@@ -114,11 +114,12 @@ and update the corresponding S3 path variables in the scripts.
 ## 5. Set your Serper API key 
 The agent integrates a web search feature using the Serper API.
 To enable it, open the file inference.py, locate the function search_serper, and replace the placeholder key with your own:
+```python
 def search_serper(query):
     SERPER_API_KEY = "your_API_key"  # create one and add it here
     url = "https://google.serper.dev/search"
     headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
-
+```
 You can create your free API key on https://serper.dev
 or you can use the function :   os.getenv()
 
