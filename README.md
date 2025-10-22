@@ -98,6 +98,11 @@ You can also run it locally if your environment has valid AWS credentials (with 
 
 The project uses data stored in an S3 bucket specific to our AWS account.
 Before running the notebooks or scripts, update any S3 paths in the code to point to your own S3 bucket.
+
+We used the file "LEGITEXT000006072050.pdf" for the demo. You can access it in the data folder.
+You can easily expand your dataset by downloading additional code files from:
+https://www.legifrance.gouv.fr/liste/codeetatTexte=VIGUEUR&etatTexte=VIGUEUR_DIFF
+
 ### 4. Using the Vector Store
 
 You can run inference.py or reference.py directly without regenerating the embeddings —
