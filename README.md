@@ -90,15 +90,43 @@ We realized how difficult it is to find **reliable information tailored to one�
 git clone https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
 cd AWS_AI_Agent_Amazon-_Sage_Maker
 ```
-## 2. Create an IAM account on AWS
-## 3.
-## 4. Set your Serper API key
-In the file : " " , the section called "Agent", you will find the function search_serper. After creating an API Key from serper, you should update it with your own key:
-```python
+## 2.  Environment Setup
+
+This project is designed to run in Amazon SageMaker Studio.
+You can also run it locally if your environment has valid AWS credentials (with permissions to access S3 and Bedrock).
+## 3. Data Configuration
+
+The project uses data stored in an S3 bucket specific to our AWS account.
+Before running the notebooks or scripts, update any S3 paths in the code to point to your own S3 bucket.
+### 4. Using the Vector Store
+
+You can run inference.py or reference.py directly without regenerating the embeddings —
+just make sure to upload the pre-built FAISS vector store (index.faiss and index.pkl) to your S3 bucket,
+and update the corresponding S3 path variables in the scripts.
+
+
+
+## 5. Set your Serper API key , or use the  puthon function ( get_... ) 
+The agent integrates a web search feature using the Serper API.
+To enable it, open the file inference.py, locate the function search_serper, and replace the placeholder key with your own:
 def search_serper(query):
     SERPER_API_KEY = "your_API_key"  # create one and add it here
     url = "https://google.serper.dev/search"
     headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
+
+You can create your free API key on https://serper.dev
+
+### 6. Deployment
+
+To deploy your model to SageMaker, run:
+
+python deployement.py
+
+
+If successful, the terminal will display the name of your deployed endpoint.
+You can also verify its status in the AWS SageMaker Console → Endpoints section.
+
+
 ```
 ## 5. Run
 
