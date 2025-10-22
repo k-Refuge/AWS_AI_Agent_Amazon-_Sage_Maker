@@ -61,6 +61,9 @@ We realized how difficult it is to find **reliable information tailored to oneâ€
 
 ##  Architecture Diagram
 
+![Uploading architecture.pngâ€¦]()
+
+
 
 ---
 
