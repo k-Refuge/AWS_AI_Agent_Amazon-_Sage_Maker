@@ -1,5 +1,5 @@
 # AWS_AI_Agent_Amazon-_Sage_Maker
-# LexiAgent — AI Agent for legal information
+# LexiAgent — AI Agent for administrative information - AWS_AI_Agent_Hackathon_LexiAgent
 ### AWS AI Agent Hackathon 2025  
 
  **Delivering accurate, quick and context-aware answers & informations to legal and administrative questions through AI.**
@@ -76,6 +76,16 @@ We realized how difficult it is to find **reliable information tailored to one�
 | **Environment** | ☁️ [AWS Bedrock Runtime](https://aws.amazon.com/bedrock/) | Executes LLM inference securely |
 | **Language** | 🇫🇷 French (extendable to multilingual) | Focused on French administrative/legal use cases |
 | **Dev Tools** | 🐍 Python 3.10+, [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) | Core development environment |
+
+
+--- 
+## Get Started 
+### clone repo
+```bash
+git clone [https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
+cd AWS_AI_Agent_Amazon-_Sage_Maker
+
+
 
 
 
