@@ -105,11 +105,9 @@ https://www.legifrance.gouv.fr/liste/codeetatTexte=VIGUEUR&etatTexte=VIGUEUR_DIF
 
 ### 4. Using the Vector Store
 
-You can run inference.py or reference.py directly without regenerating the embeddings —
+You can run **inference.py** or **reference.py** directly without regenerating the embeddings —
 just make sure to upload the pre-built FAISS vector store (index.faiss and index.pkl) to your S3 bucket,
 and update the corresponding S3 path variables in the scripts.
-
-
 
 ## 5. Set your Serper API key 
 The agent integrates a web search feature using the Serper API.
