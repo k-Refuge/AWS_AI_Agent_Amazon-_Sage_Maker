@@ -106,13 +106,20 @@ def search_serper(query):
 ## Contribution
 We’re open to all contributions and ideas! 🙌
 
-You can help by for example:
+You can help for example by:
 - Suggesting better LLMs or embeddings models
 - Expanding the legal corpus
-- Translating the system into other languages
-- Improving performance or UX
+- Deployment approach
+- 
 
 Submit a Pull Request or open an Issue to share your ideas.
+
+## What still doesn'te work
+**InvokEndpoint Error** (We appreciate your 
+We can call a model in 
+We try to deploy it with SageMaker. We got a successful output on terminal. However, when we try to call the endpoint, we have a runtime error as you can see below: 
+<img width="1231" height="157" alt="image" src="https://github.com/user-attachments/assets/f61d9b6a-48b4-4f63-a70b-9d9beec7f47c" />
+Please check our file on " " for the explained details, we would appreciate your contribution on this part.
 
 
 
