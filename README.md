@@ -69,6 +69,7 @@ We realized how difficult it is to find **reliable information tailored to one�
 | **Vector Store** | 🧮 [FAISS](https://github.com/facebookresearch/faiss) | Enables semantic similarity search |
 | **Framework** | 🔗 [LangChain](https://www.langchain.com/) | Orchestrates the RAG pipeline and agent tools |
 | **Data Source** | 📄 PDFs stored in [AWS S3](https://aws.amazon.com/s3/) | Legal texts (Code du travail, circulaires, etc.) |
+| **Execution Environment** | 🧪 [Amazon SageMaker](https://aws.amazon.com/sagemaker/) | Runs and manages the AI agent securely |
 | **Web Search** | 🌐 [Serper API](https://serper.dev/) | Fetches official references (Légifrance, Service-Public) |
 | **Memory** | 🧩 `ConversationBufferMemory` | Maintains chat context and continuity |
 | **Environment** | ☁️ [AWS Bedrock Runtime](https://aws.amazon.com/bedrock/) | Executes LLM inference securely |
@@ -83,7 +84,7 @@ We realized how difficult it is to find **reliable information tailored to one�
 git clone [https://github.com/yourusername/lexibot-aws-agent.git](https://github.com/k-Refuge/AWS_AI_Agent_Amazon-_Sage_Maker.git
 cd AWS_AI_Agent_Amazon-_Sage_Maker
 
-
+--- 
 
 
 
