@@ -6,7 +6,7 @@ from langchain.llms.bedrock import Bedrock
 from langchain.embeddings import BedrockEmbeddings
 from langchain.vectorstores import FAISS
 
-# --- Configuration AWS et modèles ---
+# --- AWS Configuration and Models ---
 import boto3
 
 bedrock_runtime = boto3.client("bedrock-runtime", region_name="us-east-1")
@@ -26,7 +26,7 @@ bedrock_embeddings = BedrockEmbeddings(
     client=bedrock_runtime
 )
 
-# --- Charger ton index vectoriel FAISS (créé dans ton notebook) ---
+# --- Load your FAISS vector index (created in your notebook)---
 vectorstore_faiss = FAISS.load_local("/opt/ml/model/faiss_index", bedrock_embeddings)
 
 retriever = vectorstore_faiss.as_retriever(search_kwargs={"k": 3})
@@ -38,7 +38,7 @@ rag_chat = ConversationalRetrievalChain.from_llm(
     memory=memory
 )
 
-# --- La fonction principale appelée par SageMaker ---
+# --- The main function called by SageMaker ---
 def predict_fn(input_data, model=None):
     """S'exécute à chaque requête API"""
     question = input_data["question"]
@@ -52,3 +52,4 @@ def input_fn(request_body, content_type):
 def output_fn(prediction, accept):
     """Retourne la réponse HTTP"""
     return json.dumps(prediction)
+
