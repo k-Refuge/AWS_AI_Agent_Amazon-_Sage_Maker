@@ -1,5 +1,5 @@
 
-# ZKAgent — AI Agent for administrative information - AWS_AI_Agent_Hackathon_LexiAgent
+# ZK_Agent — AI Agent for administrative information
 ### AWS AI Agent Hackathon 2025  
 
  **Delivering accurate, quick and context-aware answers & informations to legal and administrative questions through an AI agent.**
