@@ -47,8 +47,6 @@ To **democratize access to legal and administrative information** by combining:
 
 We aim to **deliver accurate, contextualized, and referenced answers** — bridging the gap between **raw data** and **actionable knowledge**.
 
----
-
 ##  Inspiration
 
 This project was inspired by our **own experiences as foreign students in France**, navigating complex procedures such as residency permits, labor law, and administrative rights.  
