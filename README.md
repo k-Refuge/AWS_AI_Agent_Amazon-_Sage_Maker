@@ -2,7 +2,7 @@
 # LexiAgent — AI Agent for legal information
 ### AWS AI Agent Hackathon 2025  
 
- **Empowering access to legal and administrative information through AI.**
+ **Delivering accurate, quick and context-aware answers & informations to legal and administrative questions through AI.**
 
 ---
 
