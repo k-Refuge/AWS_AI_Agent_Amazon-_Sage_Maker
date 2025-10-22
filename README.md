@@ -2,7 +2,7 @@
 # LexiAgent — AI Agent for administrative information - AWS_AI_Agent_Hackathon_LexiAgent
 ### AWS AI Agent Hackathon 2025  
 
- **Delivering accurate, quick and context-aware answers & informations to legal and administrative questions through AI.**
+ **Delivering accurate, quick and context-aware answers & informations to legal and administrative questions through an AI agent.**
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## Overview
 
-**LexiAgent** is an intelligent **LLM-based legal agent** designed for the **AWS AI Agent Hackathon 2025**.  
+**LexiAgent** is an intelligent **LLM-based legal agent** designed for the **AWS AI Agent Hackathon 2025**, that decides to search for information either on official documentation or official websites.  
 It helps users — especially foreigners or citizens unfamiliar with a certain country bureaucracy (France as example in our project) — get **clear, accurate, and context-aware answers** to legal and administrative questions such as:
 
 - Residency permits and visa procedures  
