@@ -6,6 +6,13 @@
 
 ---
 
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![AWS](https://img.shields.io/badge/AWS-Bedrock-orange)
+![LangChain](https://img.shields.io/badge/LangChain-0.2+-green)
+![Status](https://img.shields.io/badge/Project-Hackathon%202025-beta)
+
+---
+
 ## Overview
 
 **LexiAgent** is an intelligent **LLM-based legal agent** designed for the **AWS AI Agent Hackathon 2025**.  
