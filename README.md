@@ -13,7 +13,6 @@
 ![LangChain](https://img.shields.io/badge/LangChain-0.2+-green)
 ![LLM](https://img.shields.io/badge/LLM-Mistral%20Small-lightblue)
 ![Agent](https://img.shields.io/badge/Agent-Yes-yellow)
-![Status](https://img.shields.io/badge/Project-Hackathon%202025-beta)
 
 
 ---
@@ -94,12 +93,13 @@ cd ZK_Agent-AWS_AI_Agent_Hackathon
 
 This project is designed to run in Amazon SageMaker Studio.
 You can also run it locally if your environment has valid AWS credentials (with permissions to access S3 and Bedrock).
+
 ## 3. Data Configuration
 
 The project uses data stored in an S3 bucket specific to our AWS account.
 Before running the notebooks or scripts, update any S3 paths in the code to point to your own S3 bucket.
 
-We used the file "LEGITEXT000006072050.pdf" for the demo. You can access it in the data folder.
+We used the file **"LEGITEXT000006072050.pdf"** for the demonstration. You can access it in the data folder.
 You can easily expand your dataset by downloading additional code files from:
 https://www.legifrance.gouv.fr/liste/codeetatTexte=VIGUEUR&etatTexte=VIGUEUR_DIFF
 
@@ -133,8 +133,6 @@ python deployement.py
 If successful, the terminal will display the name of your deployed endpoint.
 You can also verify its status in the AWS SageMaker Console → Endpoints section.
 
-## 5. Run
-
 ---
 ## Contribution
 We’re open to all contributions and ideas! 🙌
@@ -143,7 +141,7 @@ You can help for example by:
 - Suggesting better LLMs or embeddings models
 - Expanding the legal corpus
 - Deployment approach
-- 
+- Any remarks/feeedback about our work are welcome
 
 Submit a Pull Request or open an Issue to share your ideas.
 
@@ -151,6 +149,7 @@ Submit a Pull Request or open an Issue to share your ideas.
 **InvokEndpoint Error** 
 We attempted to deploy our model using SageMaker and received a successful output in the terminal. However, when we try to call the endpoint, we encounter a runtime error, as shown below:
 <img width="1231" height="157" alt="image" src="https://github.com/user-attachments/assets/f61d9b6a-48b4-4f63-a70b-9d9beec7f47c" />
-Please refer to our file at " " for detailed explanations. We would greatly appreciate your guidance and contribution on this issue.
+Please refer to our error file for detailed explanations. We would greatly appreciate your guidance and contribution on this issue.
+
 
 
