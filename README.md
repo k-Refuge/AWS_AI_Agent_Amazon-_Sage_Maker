@@ -1,5 +1,5 @@
-# AWS_AI_Agent_Amazon-_Sage_Maker
-# LexiAgent — AI Agent for administrative information - AWS_AI_Agent_Hackathon_LexiAgent
+
+# ZKAgent — AI Agent for administrative information - AWS_AI_Agent_Hackathon_LexiAgent
 ### AWS AI Agent Hackathon 2025  
 
  **Delivering accurate, quick and context-aware answers & informations to legal and administrative questions through an AI agent.**
@@ -116,10 +116,8 @@ Submit a Pull Request or open an Issue to share your ideas.
 
 ## What still doesn't work correctly
 **InvokEndpoint Error** 
-We can call a model in 
-We try to deploy it with SageMaker. We got a successful output on terminal. However, when we try to call the endpoint, we have a runtime error as you can see below: 
+We attempted to deploy our model using SageMaker and received a successful output in the terminal. However, when we try to call the endpoint, we encounter a runtime error, as shown below:
 <img width="1231" height="157" alt="image" src="https://github.com/user-attachments/assets/f61d9b6a-48b4-4f63-a70b-9d9beec7f47c" />
-Please check our file on " " for the explained details, we would appreciate your contribution on this part.
-
+Please refer to our file at " " for detailed explanations. We would greatly appreciate your guidance and contribution on this issue.
 
 
