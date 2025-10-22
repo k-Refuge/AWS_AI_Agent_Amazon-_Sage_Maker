@@ -13,7 +13,7 @@ from langchain.agents import initialize_agent, Tool
 from langchain.llms.bedrock import Bedrock
 
 # -------------------------------
-# Configuration AWS
+# AWS Configuration 
 # -------------------------------
 AWS_REGION = "us-east-1"
 bedrock_runtime = boto3.client("bedrock-runtime", region_name=AWS_REGION)
@@ -23,7 +23,7 @@ LOCAL_FAISS_FOLDER = "/tmp/faiss_index"
 os.makedirs(LOCAL_FAISS_FOLDER, exist_ok=True)
 
 # -------------------------------
-# Paramètres du LLM
+# LLM Settings
 # -------------------------------
 model_parameters = {
     "temperature": 0.0,
@@ -39,7 +39,7 @@ llm = Bedrock(
 )
 
 # -------------------------------
-# Télécharger FAISS depuis S3
+# Download FAISS from S3
 # -------------------------------
 s3 = boto3.client("s3", region_name=AWS_REGION)
 for obj in s3.list_objects_v2(Bucket=S3_BUCKET, Prefix=S3_PREFIX).get("Contents", []):
@@ -48,7 +48,7 @@ for obj in s3.list_objects_v2(Bucket=S3_BUCKET, Prefix=S3_PREFIX).get("Contents"
     print(f"Téléchargé : {file_name}")
 
 # -------------------------------
-# Embeddings et VectorStore
+# Embeddings & VectorStore
 # -------------------------------
 bedrock_embeddings = BedrockEmbeddings(
     model_id="amazon.titan-embed-text-v2:0",
@@ -63,7 +63,7 @@ vectorstore_faiss = FAISS.load_local(
 retriever = vectorstore_faiss.as_retriever(search_kwargs={"k": 3})
 
 # -------------------------------
-# Configuration RAG
+# RAG Configuration 
 # -------------------------------
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 rag_chat = ConversationalRetrievalChain.from_llm(
@@ -73,7 +73,7 @@ rag_chat = ConversationalRetrievalChain.from_llm(
 )
 
 # -------------------------------
-# Prompt NER
+# NER Prompt 
 # -------------------------------
 ner_prompt = """[INST]
 Analyse la situation juridique décrite par l'utilisateur et extrais les éléments nécessaires pour une analyse de cas et une recherche documentaire.
@@ -100,7 +100,7 @@ Analyse la situation juridique décrite par l'utilisateur et extrais les éléme
 """
 
 # -------------------------------
-# Fonction de recherche web officielle
+# Official web search function
 # -------------------------------
 def search_serper(query):
     SERPER_API_KEY = "YOUR_SERPER_API_KEY"
@@ -115,7 +115,7 @@ def search_serper(query):
     return "\n".join(links) if links else "Aucun lien officiel trouvé."
 
 # -------------------------------
-# Fonction pour l’agent
+# Function for the agent
 # -------------------------------
 def ask_agent(question, agent, ner_prompt=ner_prompt, llm=llm):
     """
@@ -126,7 +126,7 @@ def ask_agent(question, agent, ner_prompt=ner_prompt, llm=llm):
     result = re.search('<attributes>(.*)</attributes>', entity_json, re.DOTALL)
     attributes = json.loads(result.group(1)) if result else {}
 
-    # Construire la requête enrichie
+    # Build the enriched query
     query = f"""
 Domaine du droit : {attributes.get('domaine_du_droit', '')}
 Type de problème : {attributes.get('type_de_probleme', '')}
@@ -137,7 +137,7 @@ Question : {question}
     return response
 
 # -------------------------------
-# Initialiser l’agent avec les outils
+# Initialize the agent with the tools
 # -------------------------------
 tools = [
     Tool(
@@ -161,17 +161,17 @@ agent = initialize_agent(
 )
 
 # -------------------------------
-# Fonctions pour SageMaker
+# Functions for SageMaker
 # -------------------------------
 def model_fn(model_dir):
     """
-    Appelée par SageMaker pour charger le modèle.
+    Called by SageMaker to load the model.
     """
     return agent
 
 def predict_fn(input_data, model):
     """
-    Appelée pour chaque requête d'inférence.
+    Called for each inference request.
     """
     question = input_data.get("question", "")
     result = ask_agent(question, model)
@@ -179,7 +179,7 @@ def predict_fn(input_data, model):
 
 def input_fn(request_body, request_content_type):
     """
-    Transforme la requête HTTP en dictionnaire Python.
+    Convert the HTTP request into a Python dictionary.
     """
     if request_content_type == "application/json":
         return json.loads(request_body)
@@ -187,6 +187,7 @@ def input_fn(request_body, request_content_type):
 
 def output_fn(prediction, response_content_type):
     """
-    Transforme la réponse Python en JSON.
+    Convert the Python response into JSON.
     """
     return json.dumps(prediction)
+
