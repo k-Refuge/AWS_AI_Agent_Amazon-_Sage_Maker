@@ -143,7 +143,7 @@ You can help for example by:
 - Suggesting better LLMs or embeddings models
 - Expanding the legal corpus
 - Deployment approach
-- Any remarks/feeedback about our work are welcome
+- Any remarks and/or feedbacks about our work are welcome
 
 Submit a Pull Request or open an Issue to share your ideas.
 
